@@ -1,15 +1,15 @@
-# Barcode-screenshot
+# GreenCode
 
 A [Greenshot](https://github.com/greenshot/greenshot/) 
 helper to scan barcodes. Only Windows is supported.
 
-Barcode-screenshot allows you to scan barcodes 
+GreenCode allows you to scan barcodes 
 such as QR codes from the screenshot/image, and save 
 the decoded text into the clipboard. 
 
 # Supported Formats
 
-Barcode-screenshot can scan barcodes in following formats
+GreenCode can scan barcodes in following formats
 
 | Linear product  | Linear industrial | Matrix             |
 |-----------------|-------------------|--------------------|
@@ -23,38 +23,38 @@ Barcode-screenshot can scan barcodes in following formats
 
 # Install (Greenshot)
 
-Note: It's possible to use it as a standalone program, in which case you can just download the program and start. See [Usage](#usage).
+Note: It's possible to use GreenCode as a standalone program, in which case you can just download the program and start. See [Usage](#usage).
 
-Download the latest version [here](https://github.com/CarrieForle/barcode-scanner/releases).
+Download the latest version [here](https://github.com/CarrieForle/GreenCode/releases).
 Save it somewhere safe.
 Open Greenshot and configure external commands. 
-Supply `Barcode Scanner` in "name" field
-and Barcode-screenshot's location in "Command" field.
+Supply "Barcode" in "name" field
+and GreenCode's location in "Command" field
 Click "Save".
 
 Reopen Greenshot to apply the changes.
 
 # Usage
 
-Do a screenshot and click "Barcode Scanner". 
+Do a screenshot and click "Barcode". 
 The decoded text should be in the clipboard 
 and you can paste it (Ctrl+V).
 
 You can also use it as a standalone program by 
-launching Barcode-screenshot in the terminal
+launching GreenCode in the terminal
 and passing the location of a barcode image.
 The decoded text will be set in the clipboard.
 
 For example
 ```
-.\barcode-scanner.exe barcode.png
+.\GreenCode.exe barcode.png
 ```
 
 Since it works by reading image location from the 
 argument, it's possible to integrate into other programs 
 if they support it.
 
-If Barcode-screenshot detects multiple barcodes,
+If GreenCode detects multiple barcodes,
 it will choose the first one it detected. It's 
 therefore recommended that only 1 barcode is 
 presented in a given image/screenshot.
