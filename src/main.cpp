@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
     ZXing::Barcode barcode = barcodes[0];
     std::string text = barcode.text();
     std::wstring wtext;
-    wtext.resize(MultiByteToWideChar(CP_UTF8, 0, text.c_str(), text.size(), NULL, 0));
+    wtext.resize(MultiByteToWideChar(CP_UTF8, 0, text.c_str(), text.size() + 1, NULL, 0));
     MultiByteToWideChar(CP_UTF8, 0, text.data(), text.size(), wtext.data(), wtext.size());
 
     auto hMem = GlobalAlloc(GMEM_MOVEABLE, sizeof(wchar_t) * wtext.size());
