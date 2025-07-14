@@ -28,8 +28,8 @@ Note: It's possible to use it as a standalone program, in which case you can jus
 Download the latest version [here](https://github.com/CarrieForle/barcode-scanner/releases).
 Save it somewhere safe.
 Open Greenshot and configure external commands. 
-Supply "Barcode Scanner" in "name" field
-and Barcode-screenshot's location in "Command" field
+Supply `Barcode Scanner` in "name" field
+and Barcode-screenshot's location in "Command" field.
 Click "Save".
 
 Reopen Greenshot to apply the changes.
