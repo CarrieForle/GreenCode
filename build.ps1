@@ -1,0 +1,1 @@
+g++ -O3 -o build/barcode_scanner.exe src/main.cpp -L./src/zxing -lZXing
