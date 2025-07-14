@@ -4,7 +4,7 @@ A [Greenshot](https://github.com/greenshot/greenshot/)
 helper to scan barcodes. Only Windows is supported.
 
 Barcode-screenshot allows you to scan barcodes 
-such as QR codes from the screenshot, and save 
+such as QR codes from the screenshot/image, and save 
 the decoded text into the clipboard. 
 
 # Supported Formats
@@ -21,9 +21,11 @@ Barcode-screenshot can scan barcodes in following formats
 | DataBar Limited | DX Film Edge      | PDF417             |
 |                 | ITF               | MaxiCode (partial) |
 
-# Install
+# Install (Greenshot)
 
-Download the latest version from the Release page. 
+Note: It's possible to use it as a standalone program, in which case you can just download the program and start. See [Usage](#usage).
+
+Download the latest version [here](https://github.com/CarrieForle/barcode-scanner/releases).
 Save it somewhere safe.
 Open Greenshot and configure external commands. 
 Supply "Barcode Scanner" in "name" field
@@ -38,15 +40,19 @@ Do a screenshot and click "Barcode Scanner".
 The decoded text should be in the clipboard 
 and you can paste it (Ctrl+V).
 
-You can also use it as a standalone program. 
-By launching Barcode-screenshot in the terminal
-and passing the location of a barcode image,
-the decoded text will be set in the clipboard.
+You can also use it as a standalone program by 
+launching Barcode-screenshot in the terminal
+and passing the location of a barcode image.
+The decoded text will be set in the clipboard.
 
 For example
-```pwsh
+```
 .\barcode-scanner.exe barcode.png
 ```
+
+Since it works by reading image location from the 
+argument, it's possible to integrate into other programs 
+if they support it.
 
 If Barcode-screenshot detects multiple barcodes,
 it will choose the first one it detected. It's 
