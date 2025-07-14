@@ -27,7 +27,7 @@ Download the latest version from the Release page.
 Save it somewhere safe.
 Open Greenshot and configure external commands. 
 Supply "Barcode Scanner" in "name" field
-and Barcode-scanner's location in "Command" field
+and Barcode-screenshot's location in "Command" field
 Click "Save".
 
 Reopen Greenshot to apply the changes.
@@ -38,8 +38,23 @@ Do a screenshot and click "Barcode Scanner".
 The decoded text should be in the clipboard 
 and you can paste it (Ctrl+V).
 
+You can also use it as a standalone program. 
+By launching Barcode-screenshot in the terminal
+and passing the location of a barcode image,
+the decoded text will be set in the clipboard.
+
+For example
+```pwsh
+.\barcode-scanner.exe barcode.png
+```
+
+If Barcode-screenshot detects multiple barcodes,
+it will choose the first one it detected. It's 
+therefore recommended that only 1 barcode is 
+presented in a given image/screenshot.
+
 If it did not work, it means the program did 
-not detect any barcodes.
+not detect any barcode.
 
 # Build
 
