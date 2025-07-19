@@ -29,7 +29,7 @@ Download the latest version [here](https://github.com/CarrieForle/GreenCode/rele
 Save it somewhere safe.
 Open Greenshot and configure external commands. 
 Supply "Barcode" in "name" field
-and GreenCode's location in "Command" field
+and GreenCode's location in "Command" field. 
 Click "Save".
 
 Reopen Greenshot to apply the changes.
